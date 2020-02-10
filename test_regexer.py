@@ -1,4 +1,4 @@
-from regexer import Regexer as r
+from regexer import RegexerString as r
 
 def test_match():
     assert r("Test01 string sentence02")[r"(?P<num>\d+)", 'num'] == ['01', '02']
